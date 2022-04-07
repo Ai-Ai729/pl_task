@@ -41,9 +41,7 @@ node index.js
 
 Run docker-compose:
 ```
-docker-compose build --no-cache test-server
-docker-compose down -v
-docker-compose up -d
+docker-compose up
 ```
 
 Run Dockerfile:
