@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  test-server:
+    image: node:16.10.0-alpine
+    command: /bin/sh -c 'cd app && npm install && npm start'
+    container_name: test-server
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
